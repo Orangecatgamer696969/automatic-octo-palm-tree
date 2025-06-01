@@ -323,7 +323,7 @@ notify("Auto Bond", "This's just beta version, so there may be some errors/bugs.
 
 local Notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/hungquan99/Interface/main/Notify.lua"))()
 if game.PlaceId == 70876832253163 or game.PlaceId == 98018823628597 then
-    Notif.New("[Hutao Hub] Auto Bond Loaded!", 5)
+    Notif.New("[United Goose Hub] Auto Bond Loaded!", 5)
 
     local args = {
         [1] = false
@@ -349,7 +349,7 @@ if game.PlaceId == 70876832253163 or game.PlaceId == 98018823628597 then
             print("[Hutao Hub] Resetting character...")
             humanoid.Health = 0 -- Kills character to trigger respawn
         else
-            warn("[Hutao Hub] Cannot reset: Character already dead or invalid!")
+            warn("[United Goose Hub] Cannot reset: Character already dead or invalid!")
         end
     end
 
