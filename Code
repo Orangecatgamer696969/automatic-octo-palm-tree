@@ -96,7 +96,7 @@ local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, -20, 0, 40)
 title.Position = UDim2.new(0, 10, 0, 90)
 title.BackgroundTransparency = 1
-title.Text = "Hutao Hub"
+title.Text = "United Goose Hub"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.Font = Enum.Font.FredokaOne
 title.TextSize = 32
@@ -346,7 +346,7 @@ if game.PlaceId == 70876832253163 or game.PlaceId == 98018823628597 then
     -- Function to reset character
     local function resetCharacter()
         if humanoid and humanoid.Health > 0 then
-            print("[Hutao Hub] Resetting character...")
+            print("[United Goose Hub] Resetting character...")
             humanoid.Health = 0 -- Kills character to trigger respawn
         else
             warn("[United Goose Hub] Cannot reset: Character already dead or invalid!")
@@ -442,7 +442,7 @@ if game.PlaceId == 70876832253163 or game.PlaceId == 98018823628597 then
                     if not character or not character.HumanoidRootPart then break end
                     local bond, distance = findClosestBond(true) -- Use distance limit
                     if not bond then
-                        warn("[Hutao Hub] Detected vampire castle, tp to it...")
+                        warn("[United Goose Hub] Detected vampire castle, tp to it...")
                         local oldPrint = print
                         local oldWarn = warn
 
@@ -537,7 +537,7 @@ if game.PlaceId == 70876832253163 or game.PlaceId == 98018823628597 then
         local player = Players.LocalPlayer
         local character = player.Character
         if not character or not character:FindFirstChild("HumanoidRootPart") then
-            warn("[Hutao Hub] Character or HumanoidRootPart not found!")
+            warn("[United Goose Hub] Character or HumanoidRootPart not found!")
             return
         end
 
@@ -613,7 +613,7 @@ if game.PlaceId == 70876832253163 or game.PlaceId == 98018823628597 then
         end
     end)
 else
-    Notif.New("[Hutao Hub] Auto Bond Loaded!", 5)
+    Notif.New("[United Goose Hub] Auto Bond Loaded!", 5)
     local TweenService = game:GetService("TweenService")
     local Players = game:GetService("Players")
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
